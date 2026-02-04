@@ -1,0 +1,5 @@
+location_name,description,tile1_row,tile1_col,tile2_row,tile2_col,tile3_row,tile3_col,tile4_row,tile4_col,tile5_row,tile5_col,tile6_row,tile6_col,tile7_row,tile7_col,tile8_row,tile8_col,empty_row,empty_col
+location_01,Standard 3x3 layout,0,0,0,1,0,2,1,0,1,1,1,2,2,0,2,1,2,2
+location_02,0 at top-left,0,1,0,2,1,0,1,1,1,2,2,0,2,1,2,2,0,0
+location_03,Column-major order,0,0,1,0,2,0,0,1,1,1,2,1,0,2,1,2,2,2
+location_04,Column-major with 0 top-left,1,0,2,0,0,1,1,1,2,1,0,2,1,2,2,2,0,0
