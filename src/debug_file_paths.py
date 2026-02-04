@@ -2,6 +2,7 @@ import os
 import csv
 
 def debug_paths():
+    output = ""
     print("=== DEBUGGING FILE PATHS ===")
 
     # 1. Show current working directory
@@ -35,10 +36,12 @@ def debug_paths():
         print(f"\n7. Files in {data_dir_attempt1}:")
         for file in os.listdir(data_dir_attempt1):
             print(f"   - {file}")
+            output = "ok"
     elif os.path.exists(data_dir_attempt2):
         print(f"\n7. Files in {data_dir_attempt2}:")
         for file in os.listdir(data_dir_attempt2):
             print(f"   - {file}")
+            output = "ok"
     else:
         print("\n7. Data folder not found in either location!")
 
@@ -52,6 +55,7 @@ def debug_paths():
                 for file in os.listdir(actual_data_dir):
                     print(f"   - {file}")
                 break
-
-if __name__ == "__main__":
-    debug_paths()
+            else:
+                output = "not ok"
+                break
+    return output
